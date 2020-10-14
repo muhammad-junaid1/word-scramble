@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Button Styles */
+  
+  button {
+    border: none;
+    background-color: #ee6f57;
+    padding: 6px 20px;
+    font-size: 17px;
+    width: 150px;
+    font-family: "Assistant", ans-serif;
+    font-weight: 600;
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+  }
+  button:focus {
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  
+  /* Wrapper styles */
+  
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin: 20px;
+    position: relative;
+  }
+  .game-wrapper input {
+    font-size: 18px;
+    padding: 8px 0;
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-weight: 400;
+    border-radius: 3px;
+    text-align: center;
+    width: 250px;
+    margin: 15px 0;
+    border: 1px solid #686d76;
+  }
+  .game-wrapper input::placeholder {
+    font-size: 14px;
+  }
+  .game-wrapper input:focus {
+    outline: none;
+  }
+  .logo {
+    font-family: "Poppins", sans-serif;
+    color: #4c4c4c;
+    display: block;
+    margin: 30px 0 0 30px;
+    text-decoration : none;
+  }
+  .logo span {
+    color: #ee6f57;
+  }
+  .logo span:hover {
+      border-bottom: 1px dashed;
+  }
+  
+  /* Result or Given Words styling */
+
+  .hint {
+      width: 200px;
+      padding: 8px 0;
+      text-align: center;
+      background-color: #59d8de;
+      font-family: "Assistant", sans-serif;
+      color: white;
+      position: absolute;
+      top: 20%;
+      display: none;
+  }
+  #message {
+    font-family: "Nunito";
+    display: none;
+    position: relative;
+    font-size: 40px;
+  }
+  #message span {
+    color: #59d8de;
+    font-size: 22px;
+    padding-left: 5px;
+    position: absolute;
+  }
+  #message span:hover {
+      cursor: pointer;
+  }
+  
+  /* Player Name */
+  
+  .user-name {
+    font-family: "Mukta", sans-serif;
+    align-self: flex-end;
+    color: #838383;
+    text-align: center;
+    font-size:  15px;
+  }
+  .user-name i {
+    color: #ee6f57;
+    padding-right: 5px;
+  }
+  
+  /* Toggling class to hide and show input box */
+  
+  .hide {
+    display: none;
+  }
+  
