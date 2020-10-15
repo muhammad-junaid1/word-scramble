@@ -2,10 +2,10 @@ let msg = document.querySelector("#message"),
   input = document.querySelector("#guess"),
   play = false,
   randomVal;
-  const SUBMIT = document.querySelector("#button"),
+const SUBMIT = document.querySelector("#button"),
   ASKNAME = document.querySelector("#ask-name"),
   USERNAME = document.querySelector(".user-name"),
-  HINT =  document.querySelector(".hint");
+  HINT = document.querySelector(".hint");
 let words = [
   "java",
   "kotlin",
@@ -35,11 +35,11 @@ function createWord() {
 }
 SUBMIT.addEventListener("click", playGame);
 function playGame() {
-    if(!(ASKNAME.value === "")) {
+  if (!(ASKNAME.value === "")) {
     USERNAME.innerHTML = `<i class = 'fas fa-user'></i> ${ASKNAME.value}`;
-    } else {
-        USERNAME.innerHTML = `<i class = 'fas fa-user'></i> Hi There`;
-    }
+  } else {
+    USERNAME.innerHTML = `<i class = 'fas fa-user'></i> Hi There`;
+  }
   ASKNAME.style.display = "none";
   if (!play) {
     play = true;
@@ -65,8 +65,8 @@ function playGame() {
 
   document.querySelector(".hint-icon").addEventListener("click", showHint);
   function showHint() {
-      HINT.innerHTML = `First Letter of Word is : ${words[randomVal][0].big()}`;
-    HINT.style.display = "block";
-    setTimeout("HINT.style.display = 'none'", 2000);
-}
+    HINT.innerHTML = `First Letter of Word is : ${words[randomVal][0].big()}`;
+    HINT.style.opacity = "1";
+    setTimeout("HINT.style.opacity = '0'", 2000);
+  }
 }

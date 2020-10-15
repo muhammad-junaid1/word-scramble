@@ -2,31 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
- <link rel="stylesheet" href="style.css">
-  <title>Word Scrabble</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Word Scramble</title>
 </head>
+
 <body>
-  <main>
-    <section>
-      <a href = "#" class="logo">Word | <span>Scramble</span></a>
-      <div class="game-wrapper">
-        <h4 class="hint"></h4>
-        <input type="text" id="ask-name" placeholder="Type Your Name..">
-        <h1 id="message"></h1>
-        <input type="text" id="guess" class="hide" placeholder="Enter Your Guess..">
-        <button id="button">Play Now</button>
-      </div>
-      <h3 class="user-name"></h3>
-    </section>
-  </main>
-  <script src="app.js"></script>
+    <main>
+        <section>
+            <a href="#" class="logo">
+                <img src="logo.png" width="180px" alt="Word Scramble Game">
+            </a>
+            <div class="game-wrapper">
+                <h4 class="hint"></h4>
+                <input type="text" id="ask-name" placeholder="Type Your Name..">
+                <h1 id="message"></h1>
+                <input type="text" id="guess" class="hide" placeholder="Enter Your Guess.." autocomplete="off">
+                <button id="button">Play Now</button>
+            </div>
+            <h3 class="user-name"></h3>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
